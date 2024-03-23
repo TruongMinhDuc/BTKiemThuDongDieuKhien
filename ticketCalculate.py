@@ -1,10 +1,14 @@
 def tinhGiaVe(height):
+    ans = ""
     if 1 <= height and height <= 300:
-        if height <= 130: print ("Gia ve: 20000")
-        elif height > 130: print("Gia ve: 30000")
+        if height <= 130: 
+            ans += "20000"
+        elif height > 130: 
+            ans += "30000"
     else:
-        print("Error")
+        ans += "Error"
+    return ans 
         
 print("Nhap chieu cao: ")
 a =int(input())
-tinhGiaVe(a)
+print("Gia ve: " + tinhGiaVe(a))
